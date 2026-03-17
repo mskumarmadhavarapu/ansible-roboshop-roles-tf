@@ -14,6 +14,13 @@
       enabled: yes
       name: rabbitmq-server
 
+  - name: install python dependencies for aws
+    ansible.builtin.pip:
+      name:
+        - boto3
+        - botocore
+      executable: pip3
+
   - name: create rabbitmq user
     community.rabbitmq.rabbitmq_user:
       user: roboshop 
