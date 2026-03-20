@@ -10,3 +10,4 @@ MYSQL_HOST: mysql-"{{ env }}".mskdaws88s.online
 SHIPPING_HOST: shipping-"{{ env }}".mskdaws88s.online
 RABBITMQ_HOST: rabbitmq-"{{ env }}".mskdaws88s.online
 PAYMENT_HOST: payment-"{{ env }}".mskdaws88s.online
+app_version: v3
