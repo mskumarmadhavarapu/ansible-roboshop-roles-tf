@@ -1,12 +1,13 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
 
-MONGODB_HOST: mongodb-"{{ env }}".mskdaws88s.online
-CATALOGUE_HOST: catalogue-"{{ env }}".mskdaws88s.online
-REDIS_HOST: redis-"{{ env }}".mskdaws88s.online
-USER_HOST: user-"{{ env }}".mskdaws88s.online
-CART_HOST: cart-"{{ env }}".mskdaws88s.online
-MYSQL_HOST: mysql-"{{ env }}".mskdaws88s.online
-SHIPPING_HOST: shipping-"{{ env }}".mskdaws88s.online
-RABBITMQ_HOST: rabbitmq-"{{ env }}".mskdaws88s.online
-PAYMENT_HOST: payment-"{{ env }}".mskdaws88s.online
+MONGODB_HOST: mongodb-{{ env }}.mskdaws88s.online
+MYSQL_HOST: mysql-{{ env }}.mskdaws88s.online
+REDIS_HOST: redis-{{ env }}.mskdaws88s.online
+RABBITMQ_HOST: rabbitmq-{{ env }}.mskdaws88s.online
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.mskdaws88s.online
+USER_HOST: user.backend-alb-{{ env }}.mskdaws88s.online
+CART_HOST: cart.backend-alb-{{ env }}.mskdaws88s.online
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.mskdaws88s.online
+PAYMENT_HOST: payment.backend-alb-{{ env }}.mskdaws88s.online
+app_version: v3
