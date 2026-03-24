@@ -1,6 +1,5 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
-
 MONGODB_HOST: mongodb-{{ env }}.mskdaws88s.online
 MYSQL_HOST: mysql-{{ env }}.mskdaws88s.online
 REDIS_HOST: redis-{{ env }}.mskdaws88s.online
